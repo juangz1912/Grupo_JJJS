@@ -45,7 +45,7 @@ def obtener_formula():
             formula = "n!/(n-r)!"
     elif tipo == 4:
         if repiten == "s":
-            formula = "n**r"
+            formula = "n!/a!*b!*c!"
         else:
             formula = "n!/(n1!n2!...nk!)"
     elif tipo == 5:
