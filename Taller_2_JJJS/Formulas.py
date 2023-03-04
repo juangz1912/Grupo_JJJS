@@ -5,6 +5,18 @@ def factorial(numero): #Función recursiva del factorial que utilizaré para las
       times = numero*(factorial(numero-1))
       return times
 
+def formula_x():
+   numerador = input("Ingrese el 'n' del numerador: ")
+   numerador = factorial(numerador)
+   numero_n = int(input("Cuantos n en el denominador? "))
+   denominador = 1
+   for i in range(1, numero_n + 1):
+      print("Ingrese n",i)
+      n = input()
+      denominador = denominador*factorial(n)
+   formula = numerador // denominador
+   return formula
+
 def variacion_ordinaria(m,n): #siendo m = el total de elementos y n = elementos tomados
    formula = factorial(m)//factorial(m-n)
    return formula
