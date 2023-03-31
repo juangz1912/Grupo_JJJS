@@ -5,7 +5,8 @@ def potencia(f, n):
         F = F * f #O(n)
     return F #O(n)
 
-#Big O =1(1) + 3(n)
+#ecuacion =1(1) + 3(n)
+#Big o = O(n)
 
 print(potencia(5,5))
 
