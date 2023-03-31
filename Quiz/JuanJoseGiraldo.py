@@ -2,10 +2,10 @@
 def potencia(f, n):
     F = 1 #O(1)
     for i in range(n):#O(n)
-        F = F * f #O(1)
+        F = F * f #O(n)
     return F #O(n)
 
-#Big O =2(1) + 2(n)
+#Big O =1(1) + 3(n)
 
 print(potencia(5,5))
 
