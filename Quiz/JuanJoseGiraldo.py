@@ -1,3 +1,4 @@
+#Punto 2
 def potencia(f, n):
     F = 1 #O(1)
     for i in range(n):#O(n)
@@ -18,6 +19,7 @@ def potencia_recursivo(f,n,R=1):
 
 print(potencia_recursivo(5,5))
 
+#Punto 3
 def factorial(numero):
   if numero==0 :
     return 1
