@@ -12,9 +12,14 @@ sort_type = input()
 
 match sort_type:
     case 1:
+        Sorts.Sort.heap_sort(lista)
     case 2:
         Sorts.Sort.MergeSort(lista)
     case 3:
+        Sorts.Sort.quick_sort(lista)
     case 4:
+        Sorts.Sort.counting_sort(lista)
     case 5:
+        Sorts.Sort.radix_sort(lista)
     case 6:
+        Sorts.Sort.bubble_sort(lista)
