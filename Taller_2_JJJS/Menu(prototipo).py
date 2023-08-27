@@ -11,13 +11,14 @@ def obtener_formula():
 
 
         if orden == "s" and elementos == "n" and repiten =="n":
+            formula = "m!/(m-n)!"
+            print(formula)
             m = int(input("Ingrese la población total: "))
             n = int(input("Ingrese la muestra(cantidad tomada): "))
-            formula = "m!/(m-n)!"
             resultado = Formulas.variacion_ordinaria(m, n)
             if adi == "s" or multi == "s":
                 resultados.append(resultado)
-            continuar = input("¿deseas continuar?(s/n): ").lower()
+            continuar = input("¿deseas hacer una nueva iteración?(s/n): ").lower()
             if continuar == "s":
                 continue
             else:
@@ -25,13 +26,14 @@ def obtener_formula():
         
 
         elif orden == "s" and elementos == "n" and repiten =="s":
+            formula = "m^n"
+            print(formula)
             m = int(input("Ingrese la población total: "))
             n = int(input("Ingrese la muestra(cantidad tomada): "))
-            formula = "m^n"
             resultado = Formulas.variacion_repetida(m, n)
             if adi == "s" or multi == "s":
                 resultados.append(resultado)
-            continuar = input("¿deseas continuar?(s/n): ").lower()
+            continuar = input("¿deseas hacer una nueva iteración?(s/n): ").lower()
             if continuar == "s":
                 continue
             else:
@@ -39,12 +41,13 @@ def obtener_formula():
 
 
         elif orden == "s" and elementos == "s" and repiten =="n":
-            m = int(input("Ingrese la población total: "))
             formula = "m!"
+            print(formula)
+            m = int(input("Ingrese la población total: "))
             resultado = Formulas.permutacion_ordinaria(m)
             if adi == "s" or multi == "s":
                 resultados.append(resultado)
-            continuar = input("¿deseas continuar?(s/n): ").lower()
+            continuar = input("¿deseas hacer una nueva iteración?(s/n): ").lower()
             if continuar == "s":
                 continue
             else:
@@ -52,15 +55,16 @@ def obtener_formula():
 
 
         elif orden == "s" and elementos == "s" and repiten =="s":
+            formula = "m!/a!*b!*c!"
+            print(formula)
             m = int(input("Ingrese la población total: "))
             a = int(input("Ingrese la muestra(cantidad 1): "))
             b = int(input("Ingrese la muestra(cantidad 2): "))
             c = int(input("Ingrese la muestra(cantidad 3): "))
-            formula = "m!/a!*b!*c!"
             resultado = Formulas.permutacion_repetida(m, a, b, c)
             if adi == "s" or multi == "s":
                 resultados.append(resultado)
-            continuar = input("¿deseas continuar?(s/n): ").lower()
+            continuar = input("¿deseas hacer una nueva iteración?(s/n): ").lower()
             if continuar == "s":
                 continue
             else:
@@ -68,26 +72,28 @@ def obtener_formula():
 
     
         elif orden == "n" and elementos == "n" and repiten =="n":
+            formula = "m!/n!*(n-m)!"
+            print(formula)
             m = int(input("Ingrese la población total: "))
             n = int(input("Ingrese la muestra(cantidad tomada): "))
-            formula = "m!/n!*(n-m)!"
             resultado = Formulas.combinacion_ordinaria(m, n)
             if adi == "s" or multi == "s":
                 resultados.append(resultado)
-            continuar = input("¿deseas continuar?(s/n): ").lower()
+            continuar = input("¿deseas hacer una nueva iteración?(s/n): ").lower()
             if continuar == "s":
                 continue
             else:
                 break
 
         elif orden == "n" and elementos == "n" and repiten =="s":
+            formula = "(m+n-1)!/n!*(m-1)!"
+            print(formula)
             m = int(input("Ingrese la población total: "))
             n = int(input("Ingrese la muestra(cantidad tomada): "))
-            formula = "(m+n-1)!/n!*(m-1)!"
             resultado = Formulas.combinacion_repetida(m, n)
             if adi == "s" or multi == "s":
                 resultados.append(resultado)
-            continuar = input("¿deseas continuar?(s/n): ").lower()
+            continuar = input("¿deseas hacer una nueva iteración?(s/n): ").lower()
             if continuar == "s":
                 continue
             else:
